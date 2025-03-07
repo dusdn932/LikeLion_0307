@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\bardata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\bardata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\balldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\balldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\consoleapp2\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\consoleapp2\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\consoleapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\consoleapp2\\balldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\balldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\consoleapp2\\bardata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\bardata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\blockdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|c:\\users\\yeonwoo\\documents\\github\\likelion_0307\\consoleapp2\\consoleapp2\\bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F3FF62-4FB9-4F9B-A40B-4F544FFB46A5}|ConsoleApp2\\ConsoleApp2.csproj|solutionrelative:consoleapp2\\bar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,56 +42,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\Program.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp2\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T01:32:30.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BLOCKDATA.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BLOCKDATA.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\BLOCKDATA.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BLOCKDATA.cs",
+              "RelativeToolTip": "ConsoleApp2\\BLOCKDATA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:51:59.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Block.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Block.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\Block.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Block.cs",
+              "RelativeToolTip": "ConsoleApp2\\Block.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAIAwwGIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:51:47.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Bar.cs",
               "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Bar.cs",
               "RelativeDocumentMoniker": "ConsoleApp2\\Bar.cs",
               "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Bar.cs",
               "RelativeToolTip": "ConsoleApp2\\Bar.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswE0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T04:23:04.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BARDATA.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BARDATA.cs",
-              "RelativeDocumentMoniker": "ConsoleApp2\\BARDATA.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BARDATA.cs",
-              "RelativeToolTip": "ConsoleApp2\\BARDATA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T04:25:03.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BALLDATA.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BALLDATA.cs",
-              "RelativeDocumentMoniker": "ConsoleApp2\\BALLDATA.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BALLDATA.cs",
-              "RelativeToolTip": "ConsoleApp2\\BALLDATA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T01:38:38.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Ball.cs",
               "RelativeDocumentMoniker": "ConsoleApp2\\Ball.cs",
               "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Ball.cs",
               "RelativeToolTip": "ConsoleApp2\\Ball.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAwwK0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T01:43:48.144Z",
               "EditorCaption": ""
@@ -91,27 +112,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\GameManager.cs",
-              "RelativeDocumentMoniker": "ConsoleApp2\\GameManager.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\GameManager.cs",
-              "RelativeToolTip": "ConsoleApp2\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
+              "Title": "BARDATA.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BARDATA.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\BARDATA.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BARDATA.cs",
+              "RelativeToolTip": "ConsoleApp2\\BARDATA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T02:23:09.353Z",
+              "WhenOpened": "2025-03-07T04:25:03.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApp2\\Program.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\Program.cs",
-              "RelativeToolTip": "ConsoleApp2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BALLDATA.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BALLDATA.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\BALLDATA.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\BALLDATA.cs",
+              "RelativeToolTip": "ConsoleApp2\\BALLDATA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T01:32:30.466Z",
+              "WhenOpened": "2025-03-07T01:38:38.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\GameManager.cs",
+              "RelativeDocumentMoniker": "ConsoleApp2\\GameManager.cs",
+              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\LikeLion_0307\\ConsoleApp2\\ConsoleApp2\\GameManager.cs*",
+              "RelativeToolTip": "ConsoleApp2\\GameManager.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T02:23:09.353Z",
               "EditorCaption": ""
             }
           ]

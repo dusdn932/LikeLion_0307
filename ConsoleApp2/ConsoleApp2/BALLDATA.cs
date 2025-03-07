@@ -8,9 +8,9 @@ namespace ConsoleApp2
 {
     public class BALLDATA
     {
-        public int nReady; //공 움직일 준비상태
-        public int nDirect; //공방향변수
-        public int nX, nY; //x좌표 y좌표
-
+        public int nReady { get; set; }  // 0: 움직임, 1: 정지
+        public int nDirect { get; set; } // 0: 위, 1: 오른쪽 위, 2: 오른쪽 아래, 3: 아래, 4: 왼쪽 아래, 5: 왼쪽 위
+        public int nX { get; set; }      // X 좌표
+        public int nY { get; set; }      // Y 좌표
     }
 }

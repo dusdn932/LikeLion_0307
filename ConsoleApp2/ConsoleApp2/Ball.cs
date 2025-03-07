@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,207 +9,173 @@ namespace ConsoleApp2
 {
     public class Ball
     {
-        BALLDATA m_tBall = new BALLDATA();
-
-
-        //C#공의 방향 배열 정의
-        //각면마다 번호를 부여
-        //가는방향 번호를 부여하였으니 오른쪽 위->오른쪽 아래->왼쪽 아래 = 1 4 6
-
-        int[,] g_WallCollision = new int[4, 6]
+        private BALLDATA _ballData = new BALLDATA();
+        private readonly int[,] _wallCollisionDirections = new int[4, 6]
         {
-            { 3, 2, -1, -1, -1, 4 },
-            { -1, -1, -1, -1, 2, 1 },
-            { -1, 5, 4, -1, -1, -1 },
-            { -1, -1, 1, 0, 5, -1 }
+            {  3,  2, -1, -1, -1,  4 },
+            { -1, -1, -1, -1,  2,  1 },
+            { -1,  5,  4, -1, -1, -1 },
+            { -1, -1,  1,  0,  5, -1 }
         };
 
-        Bar m_pBar;
-        //Bar클래스 가져오기
-        public void SetBar(Bar bar) { m_pBar = bar; }
-        public BALLDATA GetBall() { return m_tBall; }
-        public void SetX(int x) { m_tBall.nX += x; }
-        public void SetY(int y) { m_tBall.nX += y; }
-        public void SetBall(BALLDATA tBall) { m_tBall = tBall; }
-        public void SetReady(int Ready) { m_tBall.nReady = Ready; }
+        private Bar _bar;
+        private Block _block;
 
+        public void SetBar(Bar bar) => _bar = bar;
+        public void SetBlock(Block block) => _block = block;
 
-        //움직일 bar
-        //block
-        public void ScreenWall()
+        public void DrawScreenWall()
         {
-            Program.gotoxy(0, 0);
-            Console.Write("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
-            Program.gotoxy(0, 1);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 2);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 3);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 4);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 5);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 6);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 7);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 8);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 9);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 10);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 11);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 12);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 13);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 14);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 15);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 16);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 17);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 18);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 19);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 20);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 21);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 22);
-            Console.Write("┃                                                                             ┃");
-            Program.gotoxy(0, 23);
-            Console.Write("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            for (int y = 0; y <= 23; y++)
+            {
+                Console.SetCursorPosition(0, y);
+                if (y == 0)
+                    Console.Write("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
+                else if (y == 23)
+                    Console.Write("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+                else
+                    Console.Write("┃                                                                             ┃");
+            }
         }
-        public int Collision(int x, int y)
+
+        private int HandleCollision(int x, int y)
         {
-            //벽충돌
-            if(y == 0)
-            {
-                m_tBall.nDirect = g_WallCollision[0, m_tBall.nDirect];
-                return 1; //공의 방향이 바뀌면 1리턴
-            }
-            if (x == 1)
-            {
-                m_tBall.nDirect = g_WallCollision[1, m_tBall.nDirect];
-                return 1;
-            }
-            if (x == 77)
-            {
-                m_tBall.nDirect = g_WallCollision[2, m_tBall.nDirect];
-                return 1;
-            }
-            if(y == 23)
-            {
-                m_tBall.nDirect = g_WallCollision[3, m_tBall.nDirect];
-                return 1;
-            }
-            
-            //Bar충돌처리
-            if (x >= m_pBar.m_tBar.nX[0] && x <= m_pBar.m_tBar.nX[2] + 1 &&
-                y == (m_pBar.m_tBar.nY)) //바 위 충돌
-            {
-                if (m_tBall.nDirect == 1)
-                    m_tBall.nDirect = 2;
-                else if (m_tBall.nDirect == 2)
-                    m_tBall.nDirect = 1;
-                else if (m_tBall.nDirect == 5)
-                    m_tBall.nDirect = 4;
-                else if (m_tBall.nDirect == 4)
-                    m_tBall.nDirect = 5;
-
-                return 1; //방향이 바뀐다.
-            }
-
-            if (x >= m_pBar.m_tBar.nX[0] && x <= m_pBar.m_tBar.nX[2] + 1 &&
-              y == (m_pBar.m_tBar.nY + 1)) //바 아래 충돌
-            {
-                if (m_tBall.nDirect == 1)
-                    m_tBall.nDirect = 2;
-                else if (m_tBall.nDirect == 2)
-                    m_tBall.nDirect = 1;
-                else if (m_tBall.nDirect == 5)
-                    m_tBall.nDirect = 4;
-                else if (m_tBall.nDirect == 4)
-                    m_tBall.nDirect = 5;
-
-                return 1; //방향이 바뀐다.
-            }
+            if (CheckWallCollision(x, y)) return 1;
+            if (CheckBarCollision(x, y)) return 1;
+            if (CheckBlockCollision(x, y)) return 1;
             return 0;
         }
 
-        
-        public void Initialize()
+        private bool CheckWallCollision(int x, int y)
         {
-            m_tBall.nReady = 0;//공 안움직임 1 움직임 0
-            m_tBall.nDirect = 1;
-            m_tBall.nX = 30;
-            m_tBall.nY = 10;
-            //커서 안보이게 하기
-            Console.CursorVisible = false;
-
-        }
-        public void Progress()
-        {
-            if (m_tBall.nReady == 0)// 0 공움직이게
+            if (y == 0)
             {
-                //공의 방향에 따른 스위치문
-                switch (m_tBall.nDirect)
-                {
-                    case 0: //위
-                        if(Collision(m_tBall.nX, m_tBall.nY -1) == 0)
-                            m_tBall.nY--;
-                        break;
-                    case 1: //오른쪽 위
-                        if (Collision(m_tBall.nX+1, m_tBall.nY - 1) == 0)
-                        {
-                            m_tBall.nX++;
-                            m_tBall.nY--;
-                        }
-                        break;
-                    case 2: //오른쪽 아래
-                        if (Collision(m_tBall.nX + 1, m_tBall.nY + 1) == 0)
-                        {
-                            m_tBall.nX++;
-                            m_tBall.nY++;
-                        }
-                        break;
-                    case 3: //아래
-                        if (Collision(m_tBall.nX, m_tBall.nY + 1) == 0)
-                            m_tBall.nY++;
-                        break;
-                    case 4: //왼쪽 아래
-                        if (Collision(m_tBall.nX - 1, m_tBall.nY + 1) == 0)
-                        {
-                            m_tBall.nX--;
-                            m_tBall.nY++;
-                        }
-                        break;
-                    case 5: //왼쪽 위
-                        if (Collision(m_tBall.nX - 1, m_tBall.nY - 1) == 0)
-                        {
-                            m_tBall.nX--;
-                            m_tBall.nY--;
-                        }
-                        break;
-                }
+                _ballData.nDirect = _wallCollisionDirections[0, _ballData.nDirect];
+                return true;
+            }
+            if (x == 1)
+            {
+                _ballData.nDirect = _wallCollisionDirections[1, _ballData.nDirect];
+                return true;
+            }
+            if (x == 77)
+            {
+                _ballData.nDirect = _wallCollisionDirections[2, _ballData.nDirect];
+                return true;
+            }
+            if (y == 23)
+            {
+                _ballData.nDirect = _wallCollisionDirections[3, _ballData.nDirect];
+                return true;
+            }
+            return false;
+        }
+
+        private bool CheckBarCollision(int x, int y)
+        {
+            bool isColliding = x >= _bar.m_tBar.nX[0] && x <= _bar.m_tBar.nX[2] + 1 &&
+                             (y == _bar.m_tBar.nY || y == _bar.m_tBar.nY + 1);
+
+            if (isColliding)
+            {
+                UpdateBallDirection();
+                return true;
+            }
+            return false;
+        }
+
+        private void UpdateBallDirection()
+        {
+            switch (_ballData.nDirect)
+            {
+                case 1: _ballData.nDirect = 2; break;
+                case 2: _ballData.nDirect = 1; break;
+                case 5: _ballData.nDirect = 4; break;
+                case 4: _ballData.nDirect = 5; break;
             }
         }
+
+        private bool CheckBlockCollision(int x, int y)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                if (_block.tBlock[i].nLife != 1) continue;
+
+                bool isColliding = x >= _block.tBlock[i].nX && x <= _block.tBlock[i].nX + 1 &&
+                                 (y == _block.tBlock[i].nY || y == _block.tBlock[i].nY + 1);
+
+                if (isColliding)
+                {
+                    UpdateBallDirection();
+                    _block.tBlock[i].nLife = 0;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public BALLDATA GetBall() => _ballData;
+        public void SetX(int x) => _ballData.nX += x;
+        public void SetY(int y) => _ballData.nY += y;
+        public void SetBall(BALLDATA ballData) => _ballData = ballData;
+        public void SetReady(int ready) => _ballData.nReady = ready;
+
+        public void Initialize()
+        {
+            _ballData.nReady = 0;
+            _ballData.nDirect = 1;
+            _ballData.nX = 30;
+            _ballData.nY = 10;
+            Console.CursorVisible = false;
+        }
+
+        public void Progress()
+        {
+            if (_ballData.nReady != 0) return;
+
+            int nextX = _ballData.nX;
+            int nextY = _ballData.nY;
+
+            switch (_ballData.nDirect)
+            {
+                case 0: // 위
+                    nextY--;
+                    break;
+                case 1: // 오른쪽 위
+                    nextX++;
+                    nextY--;
+                    break;
+                case 2: // 오른쪽 아래
+                    nextX++;
+                    nextY++;
+                    break;
+                case 3: // 아래
+                    nextY++;
+                    break;
+                case 4: // 왼쪽 아래
+                    nextX--;
+                    nextY++;
+                    break;
+                case 5: // 왼쪽 위
+                    nextX--;
+                    nextY--;
+                    break;
+            }
+
+            if (HandleCollision(nextX, nextY) == 0)
+            {
+                _ballData.nX = nextX;
+                _ballData.nY = nextY;
+            }
+        }
+
         public void Render()
         {
-            ScreenWall();
-            Program.gotoxy(m_tBall.nX, m_tBall.nY);
-            Console.WriteLine("●");
+            DrawScreenWall();
+            Console.SetCursorPosition(_ballData.nX, _ballData.nY);
+            Console.Write("●");
         }
-        public void Release()
-        {
 
-        }
+        public void Release() { }
     }
 }

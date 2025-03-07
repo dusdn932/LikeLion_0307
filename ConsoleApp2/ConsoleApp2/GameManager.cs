@@ -1,48 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ConsoleApp2;
+using System;
 
 namespace ConsoleApp2
 {
     public class GameManager
     {
-        Ball m_pBall = null;
-        Bar m_pBar = null;
+        private readonly Ball _ball;
+        private readonly Block _block;
+        private readonly Bar _bar;
+
+        public GameManager()
+        {
+            _ball = new Ball();
+            _block = new Block();
+            _bar = new Bar();
+        }
+
         public void Initialize()
         {
-            if (m_pBall == null)
-            {
-                m_pBall = new Ball();
-                m_pBall.Initialize();
-            }
-            //바
-            if (m_pBar == null)
-            {
-                m_pBar = new Bar();
-                m_pBar.Initialize();
-            }
-            //볼에서 바와 벽돌을 사용해야 할것같다.
-            m_pBall.SetBar(m_pBar);
+            InitializeGameObjects();
+            SetupDependencies();
+
         }
-        
+
+        private void InitializeGameObjects()
+        {
+            _ball.Initialize();
+            _bar.Initialize();
+            _block.Initialize();
+        }
+
+        private void SetupDependencies()
+        {
+            _ball.SetBar(_bar);
+            _ball.SetBlock(_block);
+        }
 
         public void Progress()
         {
-            m_pBall.Progress();
-            m_pBar.Progress(ref m_pBall);
+            _ball.Progress();
+            _bar.Progress(_ball);
+            _block.Progress();
         }
+
         public void Render()
         {
             Console.Clear();
-            m_pBall.Render();
-            m_pBar.Render();
+            RenderGameObjects();
         }
+
+        private void RenderGameObjects()
+        {
+            _ball.Render();
+            _bar.Render();
+            _block.Render();
+        }
+
         public void Release()
         {
-            m_pBall.Release();
-            m_pBar.Release();
+            _ball.Release();
+            _block.Release();
+            _bar.Release();
         }
     }
 }

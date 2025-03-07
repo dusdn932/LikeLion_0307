@@ -8,37 +8,43 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    class Program
+    internal class Program
     {
         [DllImport("msvcrt.dll")]
-        public static extern int _getch(); //c언어 함수 가져옴
-
-
-        public static void gotoxy(int x, int y)
+        public static extern int _getch();
+        
+        private static void SetCursorPosition(int x, int y)
         {
             Console.SetCursorPosition(x, y);
         }
 
+        private static void ConfigureConsole()
+        {
+            const int WINDOW_WIDTH = 80;
+            const int WINDOW_HEIGHT = 25;
 
+            Console.SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+            Console.SetBufferSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+        }
 
         static void Main(string[] args)
         {
-            Console.SetWindowSize(80, 25);
-            Console.SetBufferSize(80, 25);
+            ConfigureConsole();
 
-            GameManager gm = new GameManager();
-            gm.Initialize();
+            var gameManager = new GameManager();
+            gameManager.Initialize();
 
-            int Curr = Environment.TickCount;
+            const int FRAME_DELAY_MS = 50;
+            var lastFrameTime = Environment.TickCount;
 
             while (true)
             {
-                if (Curr + 50 < Environment.TickCount)
+                var currentTime = Environment.TickCount;
+                if (currentTime - lastFrameTime >= FRAME_DELAY_MS)
                 {
-                    Curr = Environment.TickCount;
-
-                    gm.Progress();
-                    gm.Render();
+                    lastFrameTime = currentTime;
+                    gameManager.Progress();
+                    gameManager.Render();
                 }
             }
         }
